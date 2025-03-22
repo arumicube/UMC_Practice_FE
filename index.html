@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armin's ToDoList</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./dist/index.js" defer></script>
+</head>
+<body>
+    <!--전체를 감싸는 컨테이너-->
+    <div class="todo-container">
+        <header class="todo-container__header">
+            <h3>Armin TO-DO</h3>
+        </header>
+
+        <form 
+            id="todo_form"
+            class="todo-container__form">
+            <input 
+                id="todo_input"
+                class="todo-container__input" 
+                type="text"   
+                placeholder="오늘의 할 일을 입력하세용!">
+            <button class="todo-container__button">
+                할 일 추가
+            </button>
+        </form>
+
+        <!--할일, 목표를 감싸는 컨테이너-->
+        <div class="render-container">
+            <!--목표를 감싸는 섹션-->
+            <section class="render-container__section">
+                <div class="render-container__title"> <h3>할 일</h3></div>
+
+                <ul 
+                    id="todo_list"
+                    class="render-container__list">
+                </ul>
+            </section>
+            <!--목표를 감싸는 섹션-->
+            <section class="render-container__section">
+
+                <div class="render-container__title"><h3>완료</h3></div>
+
+                <ul id="done_list"
+                    class="render-container__list">
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
